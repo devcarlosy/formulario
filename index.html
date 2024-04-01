@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Formulário</h2>
+      <form id="myForm">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="sobrenome">Sobrenome:</label>
+          <input
+            type="text"
+            id="sobrenome"
+            name="sobrenome"
+            placeholder="Digite seu sobrenome"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="equipe">Nome da equipe ou empresa:</label>
+          <input
+            type="text"
+            id="equipe"
+            name="equipe"
+            placeholder="Nome da equipe ou empresa"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="site">Link do site:</label>
+          <input
+            type="url"
+            id="site"
+            name="site"
+            placeholder="https://www.seusite.com"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Adicione seu email para o Status de aprovação"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="foto">Adicionar foto ou arquivo:</label>
+          <input type="file" id="foto" name="foto" required />
+          <small
+            >Adicione uma foto ou arquivo da sua equipe, empresa ou
+            projeto</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="comentario">Sobre:</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            placeholder="Faça um resumo do seu projeto"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
+    </div>
+    <div id="mensagem" class="mensagem"></div>
+    <script src="/scripts/script.js"></script>
+  </body>
+</html>
